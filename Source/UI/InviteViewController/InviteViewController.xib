@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13168.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13147.4"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="InviteViewController" customModule="MagicCoin" customModuleProvider="target">
+            <connections>
+                <outlet property="guideContainerView" destination="vEc-en-hYt" id="2YN-p5-JCJ"/>
+                <outlet property="loginButton" destination="fic-rR-4d0" id="qoQ-YE-hjh"/>
+                <outlet property="view" destination="pxm-C3-8jN" id="taQ-fL-kyR"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="pxm-C3-8jN">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="K6D-q7-i9R">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo" translatesAutoresizingMaskIntoConstraints="NO" id="ZF1-7c-oru">
+                    <rect key="frame" x="139" y="40" width="97" height="130"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="ZF1-7c-oru" secondAttribute="height" multiplier="97:130" id="YWy-4y-1U7"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="© 2017 MagicCoins. All rights reserved" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CVa-Pi-jUZ">
+                    <rect key="frame" x="85" y="633.5" width="205" height="13.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                    <color key="textColor" red="0.56078431370000004" green="0.50196078430000002" blue="0.41568627450000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sVK-xh-LAa" customClass="DesignableButton" customModule="MagicCoin" customModuleProvider="target">
+                    <rect key="frame" x="33" y="551.5" width="235" height="66"/>
+                    <color key="backgroundColor" red="0.91372549020000005" green="0.75294117650000003" blue="0.50196078430000002" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="sVK-xh-LAa" secondAttribute="height" multiplier="235:66" id="CJU-ZJ-7oH"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                    <color key="tintColor" red="0.23137254900000001" green="0.13725490200000001" blue="0.08235294118" alpha="1" colorSpace="calibratedRGB"/>
+                    <state key="normal" title="Registration"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="10"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                            <color key="value" red="0.74509803919999995" green="0.61568627450000002" blue="0.42745098040000001" alpha="1" colorSpace="calibratedRGB"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                            <real key="value" value="2"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="onRegistrationButton:" destination="-1" eventType="touchUpInside" id="J4i-hb-xov"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fic-rR-4d0" customClass="DesignableButton" customModule="MagicCoin" customModuleProvider="target">
+                    <rect key="frame" x="33" y="477.5" width="309" height="66"/>
+                    <color key="backgroundColor" red="0.25490196079999999" green="0.3803921569" blue="0.57254901960000004" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="fic-rR-4d0" secondAttribute="height" multiplier="103:22" id="WCt-Mg-RLh"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                    <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <state key="normal" title="Login"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="10"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                            <color key="value" red="0.1764705882" green="0.27058823529999998" blue="0.41176470590000003" alpha="1" colorSpace="calibratedRGB"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                            <real key="value" value="2"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="onLoginButton:" destination="-1" eventType="touchUpInside" id="JRS-aE-Jl7"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8K4-qy-pi4" customClass="DesignableButton" customModule="MagicCoin" customModuleProvider="target">
+                    <rect key="frame" x="276" y="551.5" width="66" height="66"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="8K4-qy-pi4" secondAttribute="height" multiplier="1:1" id="ZyM-29-qQT"/>
+                    </constraints>
+                    <state key="normal" image="SocialReg"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="10"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                            <color key="value" red="0.74509803919999995" green="0.61568627450000002" blue="0.42745098040000001" alpha="1" colorSpace="calibratedRGB"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                            <real key="value" value="2"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GES-xq-1Pj">
+                    <rect key="frame" x="0.0" y="170" width="375" height="307.5"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vEc-en-hYt" customClass="DesignableView" customModule="MagicCoin" customModuleProvider="target">
+                            <rect key="frame" x="33" y="28.5" width="309" height="251"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="vEc-en-hYt" secondAttribute="height" multiplier="310:252" id="MLe-BT-dxA"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                    <color key="value" red="0.74509803921568629" green="0.61568627450980395" blue="0.42745098039215684" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                                    <real key="value" value="10"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                    <real key="value" value="1"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="10"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
+                                    <size key="value" width="0.0" height="10"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="vEc-en-hYt" secondAttribute="trailing" constant="33" id="IQe-RY-Y6F"/>
+                        <constraint firstItem="vEc-en-hYt" firstAttribute="centerY" secondItem="GES-xq-1Pj" secondAttribute="centerY" id="Tp4-84-JoO"/>
+                        <constraint firstItem="vEc-en-hYt" firstAttribute="leading" secondItem="GES-xq-1Pj" secondAttribute="leading" constant="33" id="kSe-iQ-yX8"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="8K4-qy-pi4" firstAttribute="centerY" secondItem="sVK-xh-LAa" secondAttribute="centerY" id="1BT-pC-U7a"/>
+                <constraint firstAttribute="trailing" secondItem="GES-xq-1Pj" secondAttribute="trailing" id="5NF-Tp-Zo4"/>
+                <constraint firstItem="GES-xq-1Pj" firstAttribute="top" secondItem="ZF1-7c-oru" secondAttribute="bottom" id="67P-VY-Ab5"/>
+                <constraint firstAttribute="bottom" secondItem="K6D-q7-i9R" secondAttribute="bottom" id="6xv-NX-ww1"/>
+                <constraint firstItem="CVa-Pi-jUZ" firstAttribute="top" secondItem="sVK-xh-LAa" secondAttribute="bottom" constant="16" id="D6S-cl-qi3"/>
+                <constraint firstItem="ZF1-7c-oru" firstAttribute="width" secondItem="pxm-C3-8jN" secondAttribute="width" multiplier="97:375" id="EqG-Bt-7Hx"/>
+                <constraint firstItem="sVK-xh-LAa" firstAttribute="leading" secondItem="pxm-C3-8jN" secondAttribute="leading" constant="33" id="GqI-JA-aRu"/>
+                <constraint firstItem="sVK-xh-LAa" firstAttribute="top" secondItem="fic-rR-4d0" secondAttribute="bottom" constant="8" symbolic="YES" id="QnU-oi-4yt"/>
+                <constraint firstItem="ZF1-7c-oru" firstAttribute="top" secondItem="pxm-C3-8jN" secondAttribute="top" constant="40" id="Reb-wg-0q4"/>
+                <constraint firstAttribute="trailing" secondItem="fic-rR-4d0" secondAttribute="trailing" constant="33" id="X63-eR-Y59"/>
+                <constraint firstAttribute="trailing" secondItem="K6D-q7-i9R" secondAttribute="trailing" id="YR3-Q0-yaT"/>
+                <constraint firstItem="8K4-qy-pi4" firstAttribute="leading" secondItem="sVK-xh-LAa" secondAttribute="trailing" constant="8" symbolic="YES" id="ZlI-3X-r3M"/>
+                <constraint firstItem="K6D-q7-i9R" firstAttribute="top" secondItem="pxm-C3-8jN" secondAttribute="top" id="b5X-2F-A1P"/>
+                <constraint firstItem="ZF1-7c-oru" firstAttribute="centerX" secondItem="pxm-C3-8jN" secondAttribute="centerX" id="eqJ-4x-1gr"/>
+                <constraint firstItem="CVa-Pi-jUZ" firstAttribute="centerX" secondItem="pxm-C3-8jN" secondAttribute="centerX" id="f1j-Uu-wLy"/>
+                <constraint firstItem="fic-rR-4d0" firstAttribute="leading" secondItem="pxm-C3-8jN" secondAttribute="leading" constant="33" id="kGo-xg-85x"/>
+                <constraint firstItem="GES-xq-1Pj" firstAttribute="leading" secondItem="pxm-C3-8jN" secondAttribute="leading" id="ohB-x1-bQc"/>
+                <constraint firstItem="8K4-qy-pi4" firstAttribute="height" secondItem="sVK-xh-LAa" secondAttribute="height" id="p0a-Mc-RUN"/>
+                <constraint firstItem="fic-rR-4d0" firstAttribute="top" secondItem="GES-xq-1Pj" secondAttribute="bottom" id="uRC-Vn-qte"/>
+                <constraint firstAttribute="trailing" secondItem="8K4-qy-pi4" secondAttribute="trailing" constant="33" id="x3Q-Yi-gbg"/>
+                <constraint firstItem="K6D-q7-i9R" firstAttribute="leading" secondItem="pxm-C3-8jN" secondAttribute="leading" id="yTg-hb-53V"/>
+                <constraint firstAttribute="bottom" secondItem="CVa-Pi-jUZ" secondAttribute="bottom" constant="20" symbolic="YES" id="z44-lu-se9"/>
+            </constraints>
+            <point key="canvasLocation" x="60.5" y="54.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Background" width="375" height="667"/>
+        <image name="Logo" width="97" height="130"/>
+        <image name="SocialReg" width="66" height="66"/>
+    </resources>
+</document>

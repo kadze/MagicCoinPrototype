@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoginViewController" customModule="MagicCoin" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="c9n-s8-gQi">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo" translatesAutoresizingMaskIntoConstraints="NO" id="3SP-vg-Uen">
+                    <rect key="frame" x="156" y="24" width="63" height="85"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="63" id="MOe-yc-KEf"/>
+                        <constraint firstAttribute="height" constant="85" id="dgt-Kk-GDA"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Login" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="loP-C7-FFh">
+                    <rect key="frame" x="162.5" y="129" width="49.5" height="24"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                    <color key="textColor" red="0.23137254901960785" green="0.13725490196078433" blue="0.082352941176470587" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BDl-tZ-JBr" customClass="DesignableView" customModule="MagicCoin" customModuleProvider="target">
+                    <rect key="frame" x="33" y="173" width="309" height="251"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="8GB-iF-OIB">
+                            <rect key="frame" x="0.0" y="8" width="309" height="223"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="EMAIL" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MkV-rl-ryP">
+                                    <rect key="frame" x="136.5" y="0.0" width="36" height="14.5"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                    <color key="textColor" red="0.23137254901960785" green="0.13725490196078433" blue="0.082352941176470587" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ABU-Xu-7zj" customClass="DesignableTextField" customModule="MagicCoin" customModuleProvider="target">
+                                    <rect key="frame" x="20" y="22.5" width="269" height="44"/>
+                                    <color key="backgroundColor" red="0.96862745098039216" green="0.94509803921568625" blue="0.90588235294117647" alpha="1" colorSpace="calibratedRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="44" id="keh-7o-ZUP"/>
+                                    </constraints>
+                                    <color key="textColor" red="0.23137254901960785" green="0.13725490196078433" blue="0.082352941176470587" alpha="1" colorSpace="calibratedRGB"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                            <real key="value" value="1"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                            <color key="value" red="0.84705882352941175" green="0.77647058823529413" blue="0.6705882352941176" alpha="1" colorSpace="calibratedRGB"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                            <real key="value" value="10"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </textField>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PIN" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kg7-JC-v99">
+                                    <rect key="frame" x="144.5" y="74.5" width="20" height="14.5"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                    <color key="textColor" red="0.23137254901960785" green="0.13725490196078433" blue="0.082352941176470587" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="oFu-pX-Wi6">
+                                    <rect key="frame" x="20" y="97" width="269" height="44"/>
+                                    <subviews>
+                                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cUd-7U-rjg" userLabel="pin0" customClass="MGCTextField" customModule="MagicCoin" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="0.0" width="61.5" height="44"/>
+                                            <color key="backgroundColor" red="0.96862745098039216" green="0.94509803921568625" blue="0.90588235294117647" alpha="1" colorSpace="calibratedRGB"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="44" id="NaJ-Bp-a4l"/>
+                                            </constraints>
+                                            <color key="textColor" red="0.23137254901960785" green="0.13725490196078433" blue="0.082352941176470587" alpha="1" colorSpace="calibratedRGB"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                            <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                    <real key="value" value="1"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                    <color key="value" red="0.84705882352941175" green="0.77647058823529413" blue="0.6705882352941176" alpha="1" colorSpace="calibratedRGB"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                    <real key="value" value="10"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="boolean" keyPath="alternativeBehaviour" value="YES"/>
+                                            </userDefinedRuntimeAttributes>
+                                            <connections>
+                                                <outlet property="nextField" destination="uTR-u0-gvi" id="IbW-OM-Dd4"/>
+                                            </connections>
+                                        </textField>
+                                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uTR-u0-gvi" userLabel="pin1" customClass="MGCTextField" customModule="MagicCoin" customModuleProvider="target">
+                                            <rect key="frame" x="69.5" y="0.0" width="61" height="44"/>
+                                            <color key="backgroundColor" red="0.96862745098039216" green="0.94509803921568625" blue="0.90588235294117647" alpha="1" colorSpace="calibratedRGB"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="44" id="zF2-M3-K8X"/>
+                                            </constraints>
+                                            <color key="textColor" red="0.23137254901960785" green="0.13725490196078433" blue="0.082352941176470587" alpha="1" colorSpace="calibratedRGB"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                            <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                    <real key="value" value="1"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                    <color key="value" red="0.84705882352941175" green="0.77647058823529413" blue="0.6705882352941176" alpha="1" colorSpace="calibratedRGB"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                    <real key="value" value="10"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="boolean" keyPath="alternativeBehaviour" value="YES"/>
+                                            </userDefinedRuntimeAttributes>
+                                            <connections>
+                                                <outlet property="nextField" destination="haE-iq-PJA" id="W5F-q4-PRc"/>
+                                                <outlet property="prevField" destination="cUd-7U-rjg" id="ajT-nR-APq"/>
+                                            </connections>
+                                        </textField>
+                                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="haE-iq-PJA" userLabel="pin2" customClass="MGCTextField" customModule="MagicCoin" customModuleProvider="target">
+                                            <rect key="frame" x="138.5" y="0.0" width="61.5" height="44"/>
+                                            <color key="backgroundColor" red="0.96862745098039216" green="0.94509803921568625" blue="0.90588235294117647" alpha="1" colorSpace="calibratedRGB"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="44" id="rqS-c3-QTD"/>
+                                            </constraints>
+                                            <color key="textColor" red="0.23137254901960785" green="0.13725490196078433" blue="0.082352941176470587" alpha="1" colorSpace="calibratedRGB"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                            <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                    <real key="value" value="1"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                    <color key="value" red="0.84705882352941175" green="0.77647058823529413" blue="0.6705882352941176" alpha="1" colorSpace="calibratedRGB"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                    <real key="value" value="10"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="boolean" keyPath="alternativeBehaviour" value="YES"/>
+                                            </userDefinedRuntimeAttributes>
+                                            <connections>
+                                                <outlet property="nextField" destination="5FH-EP-5Ah" id="szZ-I4-ATl"/>
+                                                <outlet property="prevField" destination="uTR-u0-gvi" id="TqY-Pu-YbG"/>
+                                            </connections>
+                                        </textField>
+                                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5FH-EP-5Ah" userLabel="pin3" customClass="MGCTextField" customModule="MagicCoin" customModuleProvider="target">
+                                            <rect key="frame" x="208" y="0.0" width="61" height="44"/>
+                                            <color key="backgroundColor" red="0.96862745098039216" green="0.94509803921568625" blue="0.90588235294117647" alpha="1" colorSpace="calibratedRGB"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="44" id="dXq-fh-NcK"/>
+                                            </constraints>
+                                            <color key="textColor" red="0.23137254901960785" green="0.13725490196078433" blue="0.082352941176470587" alpha="1" colorSpace="calibratedRGB"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                            <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                    <real key="value" value="1"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                    <color key="value" red="0.84705882352941175" green="0.77647058823529413" blue="0.6705882352941176" alpha="1" colorSpace="calibratedRGB"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                    <real key="value" value="10"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="boolean" keyPath="alternativeBehaviour" value="YES"/>
+                                            </userDefinedRuntimeAttributes>
+                                            <connections>
+                                                <outlet property="prevField" destination="haE-iq-PJA" id="jTZ-PY-sBu"/>
+                                            </connections>
+                                        </textField>
+                                    </subviews>
+                                </stackView>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="saf-0H-KTB" userLabel="AlignmentView1">
+                                    <rect key="frame" x="20" y="149" width="269" height="0.0"/>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" id="2B4-3m-th9"/>
+                                    </constraints>
+                                </view>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YMb-YQ-sxu" customClass="DesignableButton" customModule="MagicCoin" customModuleProvider="target">
+                                    <rect key="frame" x="20" y="157" width="269" height="66"/>
+                                    <color key="backgroundColor" red="0.25490196079999999" green="0.3803921569" blue="0.57254901960000004" alpha="1" colorSpace="calibratedRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="66" id="nmL-0a-5FU"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                    <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <state key="normal" title="Login"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                            <real key="value" value="10"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                            <color key="value" red="0.1764705882" green="0.27058823529999998" blue="0.41176470590000003" alpha="1" colorSpace="calibratedRGB"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                            <real key="value" value="2"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                    <connections>
+                                        <action selector="onLoginButton:" destination="-1" eventType="touchUpInside" id="rdw-iY-vTr"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <constraints>
+                                <constraint firstAttribute="trailing" secondItem="saf-0H-KTB" secondAttribute="trailing" constant="20" symbolic="YES" id="1tJ-87-Qha"/>
+                                <constraint firstItem="YMb-YQ-sxu" firstAttribute="leading" secondItem="8GB-iF-OIB" secondAttribute="leading" constant="20" symbolic="YES" id="9uq-pY-t7A"/>
+                                <constraint firstItem="ABU-Xu-7zj" firstAttribute="leading" secondItem="8GB-iF-OIB" secondAttribute="leading" constant="20" symbolic="YES" id="Gq5-B1-Iwa"/>
+                                <constraint firstAttribute="trailing" secondItem="YMb-YQ-sxu" secondAttribute="trailing" constant="20" symbolic="YES" id="MCR-OC-up6"/>
+                                <constraint firstAttribute="trailing" secondItem="ABU-Xu-7zj" secondAttribute="trailing" constant="20" symbolic="YES" id="nHP-m8-HoY"/>
+                                <constraint firstItem="saf-0H-KTB" firstAttribute="leading" secondItem="8GB-iF-OIB" secondAttribute="leading" constant="20" symbolic="YES" id="pJf-AH-y3u"/>
+                                <constraint firstAttribute="trailing" secondItem="oFu-pX-Wi6" secondAttribute="trailing" constant="20" symbolic="YES" id="qlX-X5-acu"/>
+                                <constraint firstItem="oFu-pX-Wi6" firstAttribute="leading" secondItem="8GB-iF-OIB" secondAttribute="leading" constant="20" symbolic="YES" id="s4o-IL-qf8"/>
+                            </constraints>
+                        </stackView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="8GB-iF-OIB" firstAttribute="leading" secondItem="BDl-tZ-JBr" secondAttribute="leading" id="Jzi-BW-aXo"/>
+                        <constraint firstAttribute="trailing" secondItem="8GB-iF-OIB" secondAttribute="trailing" id="U2E-oN-4Qz"/>
+                        <constraint firstAttribute="bottom" secondItem="8GB-iF-OIB" secondAttribute="bottom" constant="20" symbolic="YES" id="b7c-AC-Z5u"/>
+                        <constraint firstItem="8GB-iF-OIB" firstAttribute="top" secondItem="BDl-tZ-JBr" secondAttribute="top" constant="8" id="xLr-Du-lo3"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="10"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
+                            <size key="value" width="0.0" height="10"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                            <real key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                            <real key="value" value="10"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                            <color key="value" red="0.74509803921568629" green="0.61568627450980395" blue="0.42745098039215684" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="© 2017 MagicCoins. All rights reserved" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PKb-xa-7sm">
+                    <rect key="frame" x="85.5" y="633" width="204.5" height="13.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                    <color key="textColor" red="0.56078431370000004" green="0.50196078430000002" blue="0.41568627450000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Tce-Yl-ccS" userLabel="AlignmentView2">
+                    <rect key="frame" x="0.0" y="424" width="375" height="209"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x0q-FJ-R5E">
+                            <rect key="frame" x="111" y="88" width="153" height="32"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                            <state key="normal" title="FORGOT PIN-CODE?">
+                                <color key="titleColor" red="0.23137254901960785" green="0.13725490196078433" blue="0.082352941176470587" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="onForgotPinButton:" destination="-1" eventType="touchUpInside" id="Ztz-uB-m81"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="x0q-FJ-R5E" firstAttribute="centerY" secondItem="Tce-Yl-ccS" secondAttribute="centerY" id="Aap-sW-pKu"/>
+                        <constraint firstItem="x0q-FJ-R5E" firstAttribute="centerX" secondItem="Tce-Yl-ccS" secondAttribute="centerX" id="uGm-Xc-Oo1"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="c9n-s8-gQi" secondAttribute="trailing" id="3hn-fc-Lgr"/>
+                <constraint firstItem="Tce-Yl-ccS" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="5J0-Ag-B1S"/>
+                <constraint firstItem="3SP-vg-Uen" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="24" id="5sX-K1-jJB"/>
+                <constraint firstItem="3SP-vg-Uen" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="9jM-ZX-eNh"/>
+                <constraint firstItem="BDl-tZ-JBr" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="33" id="AZ5-MV-rYd"/>
+                <constraint firstItem="BDl-tZ-JBr" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Bk5-HJ-srT"/>
+                <constraint firstItem="PKb-xa-7sm" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="CgV-Gl-wPF"/>
+                <constraint firstItem="loP-C7-FFh" firstAttribute="top" secondItem="3SP-vg-Uen" secondAttribute="bottom" constant="20" id="DCH-Cp-WSe"/>
+                <constraint firstAttribute="trailing" secondItem="Tce-Yl-ccS" secondAttribute="trailing" id="DNy-Ha-7Vd"/>
+                <constraint firstAttribute="trailing" secondItem="BDl-tZ-JBr" secondAttribute="trailing" constant="33" id="DvG-7J-iqr"/>
+                <constraint firstItem="c9n-s8-gQi" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="EOG-w4-AKi"/>
+                <constraint firstItem="Tce-Yl-ccS" firstAttribute="top" secondItem="BDl-tZ-JBr" secondAttribute="bottom" id="G3f-bi-h9h"/>
+                <constraint firstItem="c9n-s8-gQi" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="INA-ZI-Ur9"/>
+                <constraint firstAttribute="bottom" secondItem="PKb-xa-7sm" secondAttribute="bottom" constant="20" symbolic="YES" id="Lfj-3H-qVC"/>
+                <constraint firstItem="BDl-tZ-JBr" firstAttribute="top" secondItem="loP-C7-FFh" secondAttribute="bottom" constant="20" id="OFC-j6-Lu8"/>
+                <constraint firstItem="loP-C7-FFh" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="iA8-EV-jrU"/>
+                <constraint firstItem="PKb-xa-7sm" firstAttribute="top" secondItem="Tce-Yl-ccS" secondAttribute="bottom" id="l3J-l7-Sfb"/>
+                <constraint firstAttribute="bottom" secondItem="c9n-s8-gQi" secondAttribute="bottom" id="xbv-lg-ekr"/>
+            </constraints>
+            <point key="canvasLocation" x="45.5" y="81.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Background" width="375" height="667"/>
+        <image name="Logo" width="97" height="130"/>
+    </resources>
+</document>

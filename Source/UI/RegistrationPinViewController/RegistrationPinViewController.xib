@@ -1,0 +1,370 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RegistrationPinViewController" customModule="MagicCoin" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="Giu-zj-Ce2" id="5Sv-p0-82W"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="Giu-zj-Ce2">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="bl6-S4-gnE">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2 of 2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pGh-Xx-2aa">
+                    <rect key="frame" x="313" y="36" width="42" height="19.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <color key="textColor" red="0.72549019609999998" green="0.66666666669999997" blue="0.57254901960000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo" translatesAutoresizingMaskIntoConstraints="NO" id="P1E-xQ-0zc">
+                    <rect key="frame" x="156" y="24" width="63" height="85"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="63" id="H5X-Uy-MLv"/>
+                        <constraint firstAttribute="height" constant="85" id="odt-ef-1A8"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Registration" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="haU-lZ-gsL">
+                    <rect key="frame" x="134" y="129" width="107.5" height="24"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                    <color key="textColor" red="0.23137254900000001" green="0.13725490200000001" blue="0.08235294118" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="L3Z-tx-Q1j" customClass="DesignableView" customModule="MagicCoin" customModuleProvider="target">
+                    <rect key="frame" x="33" y="173" width="309" height="251"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="wlh-ch-mK3">
+                            <rect key="frame" x="0.0" y="8" width="309" height="223"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="THINK UP PIN" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Tb-PK-lxR">
+                                    <rect key="frame" x="114.5" y="0.0" width="80" height="14.5"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                    <color key="textColor" red="0.23137254900000001" green="0.13725490200000001" blue="0.08235294118" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Ycc-KF-RWZ">
+                                    <rect key="frame" x="20" y="22.5" width="269" height="44"/>
+                                    <subviews>
+                                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1vQ-cK-dca" userLabel="pin1" customClass="MGCTextField" customModule="MagicCoin" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="0.0" width="61.5" height="44"/>
+                                            <color key="backgroundColor" red="0.96862745100000003" green="0.94509803920000002" blue="0.90588235289999997" alpha="1" colorSpace="calibratedRGB"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="44" id="kUt-3u-Plm"/>
+                                            </constraints>
+                                            <color key="textColor" red="0.23137254901960785" green="0.13725490196078433" blue="0.082352941176470587" alpha="1" colorSpace="calibratedRGB"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                            <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                    <real key="value" value="1"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                    <color key="value" red="0.84705882349999995" green="0.77647058820000003" blue="0.6705882353" alpha="1" colorSpace="calibratedRGB"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                    <real key="value" value="10"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
+                                            <connections>
+                                                <outlet property="nextField" destination="4OQ-eJ-aX9" id="kBt-dR-OTC"/>
+                                            </connections>
+                                        </textField>
+                                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4OQ-eJ-aX9" userLabel="pin2" customClass="MGCTextField" customModule="MagicCoin" customModuleProvider="target">
+                                            <rect key="frame" x="69.5" y="0.0" width="61" height="44"/>
+                                            <color key="backgroundColor" red="0.96862745100000003" green="0.94509803920000002" blue="0.90588235289999997" alpha="1" colorSpace="calibratedRGB"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="44" id="OgQ-iK-VO8"/>
+                                            </constraints>
+                                            <color key="textColor" red="0.23137254901960785" green="0.13725490196078433" blue="0.082352941176470587" alpha="1" colorSpace="calibratedRGB"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                            <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                    <real key="value" value="1"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                    <color key="value" red="0.84705882349999995" green="0.77647058820000003" blue="0.6705882353" alpha="1" colorSpace="calibratedRGB"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                    <real key="value" value="10"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
+                                            <connections>
+                                                <outlet property="nextField" destination="TIQ-ff-PaO" id="77N-hs-ibw"/>
+                                                <outlet property="prevField" destination="1vQ-cK-dca" id="Z0c-4E-1b3"/>
+                                            </connections>
+                                        </textField>
+                                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="TIQ-ff-PaO" userLabel="pin3" customClass="MGCTextField" customModule="MagicCoin" customModuleProvider="target">
+                                            <rect key="frame" x="138.5" y="0.0" width="61.5" height="44"/>
+                                            <color key="backgroundColor" red="0.96862745100000003" green="0.94509803920000002" blue="0.90588235289999997" alpha="1" colorSpace="calibratedRGB"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="44" id="Iuj-Oi-B0X"/>
+                                            </constraints>
+                                            <color key="textColor" red="0.23137254901960785" green="0.13725490196078433" blue="0.082352941176470587" alpha="1" colorSpace="calibratedRGB"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                            <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                    <real key="value" value="1"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                    <color key="value" red="0.84705882349999995" green="0.77647058820000003" blue="0.6705882353" alpha="1" colorSpace="calibratedRGB"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                    <real key="value" value="10"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
+                                            <connections>
+                                                <outlet property="nextField" destination="Ehx-3O-GW8" id="KmC-U6-SrS"/>
+                                                <outlet property="prevField" destination="4OQ-eJ-aX9" id="fUh-zO-46i"/>
+                                            </connections>
+                                        </textField>
+                                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ehx-3O-GW8" userLabel="pin4" customClass="MGCTextField" customModule="MagicCoin" customModuleProvider="target">
+                                            <rect key="frame" x="208" y="0.0" width="61" height="44"/>
+                                            <color key="backgroundColor" red="0.96862745100000003" green="0.94509803920000002" blue="0.90588235289999997" alpha="1" colorSpace="calibratedRGB"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="44" id="Jfx-v2-UIp"/>
+                                            </constraints>
+                                            <color key="textColor" red="0.23137254901960785" green="0.13725490196078433" blue="0.082352941176470587" alpha="1" colorSpace="calibratedRGB"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                            <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                    <real key="value" value="1"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                    <color key="value" red="0.84705882349999995" green="0.77647058820000003" blue="0.6705882353" alpha="1" colorSpace="calibratedRGB"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                    <real key="value" value="10"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
+                                            <connections>
+                                                <outlet property="prevField" destination="TIQ-ff-PaO" id="Pxk-AE-XcT"/>
+                                            </connections>
+                                        </textField>
+                                    </subviews>
+                                </stackView>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ENTER YOUR PIN AGAIN" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mYg-JT-2UF">
+                                    <rect key="frame" x="85" y="74.5" width="139" height="14.5"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                    <color key="textColor" red="0.23137254900000001" green="0.13725490200000001" blue="0.08235294118" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="85g-eT-1Oi">
+                                    <rect key="frame" x="20" y="97" width="269" height="44"/>
+                                    <subviews>
+                                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WfM-78-4m3" userLabel="pin5" customClass="MGCTextField" customModule="MagicCoin" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="0.0" width="61.5" height="44"/>
+                                            <color key="backgroundColor" red="0.96862745100000003" green="0.94509803920000002" blue="0.90588235289999997" alpha="1" colorSpace="calibratedRGB"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="44" id="zna-ux-RI4"/>
+                                            </constraints>
+                                            <nil key="textColor"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                            <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                    <real key="value" value="1"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                    <color key="value" red="0.84705882349999995" green="0.77647058820000003" blue="0.6705882353" alpha="1" colorSpace="calibratedRGB"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                    <real key="value" value="10"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
+                                            <connections>
+                                                <outlet property="nextField" destination="9Vn-cf-tyd" id="NiE-Jy-6uX"/>
+                                            </connections>
+                                        </textField>
+                                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9Vn-cf-tyd" userLabel="pin6" customClass="MGCTextField" customModule="MagicCoin" customModuleProvider="target">
+                                            <rect key="frame" x="69.5" y="0.0" width="61" height="44"/>
+                                            <color key="backgroundColor" red="0.96862745100000003" green="0.94509803920000002" blue="0.90588235289999997" alpha="1" colorSpace="calibratedRGB"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="44" id="CKb-vz-4sv"/>
+                                            </constraints>
+                                            <nil key="textColor"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                            <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                    <real key="value" value="1"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                    <color key="value" red="0.84705882349999995" green="0.77647058820000003" blue="0.6705882353" alpha="1" colorSpace="calibratedRGB"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                    <real key="value" value="10"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
+                                            <connections>
+                                                <outlet property="nextField" destination="L7j-Nm-SZN" id="kn2-7T-UWy"/>
+                                                <outlet property="prevField" destination="WfM-78-4m3" id="iS1-6J-2xE"/>
+                                            </connections>
+                                        </textField>
+                                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="L7j-Nm-SZN" userLabel="pin7" customClass="MGCTextField" customModule="MagicCoin" customModuleProvider="target">
+                                            <rect key="frame" x="138.5" y="0.0" width="61.5" height="44"/>
+                                            <color key="backgroundColor" red="0.96862745100000003" green="0.94509803920000002" blue="0.90588235289999997" alpha="1" colorSpace="calibratedRGB"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="44" id="Ioe-KQ-9bM"/>
+                                            </constraints>
+                                            <nil key="textColor"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                            <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                    <real key="value" value="1"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                    <color key="value" red="0.84705882349999995" green="0.77647058820000003" blue="0.6705882353" alpha="1" colorSpace="calibratedRGB"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                    <real key="value" value="10"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
+                                            <connections>
+                                                <outlet property="nextField" destination="n83-94-sYP" id="nTF-z3-sMx"/>
+                                                <outlet property="prevField" destination="9Vn-cf-tyd" id="n0o-iB-mu5"/>
+                                            </connections>
+                                        </textField>
+                                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="n83-94-sYP" userLabel="pin8" customClass="MGCTextField" customModule="MagicCoin" customModuleProvider="target">
+                                            <rect key="frame" x="208" y="0.0" width="61" height="44"/>
+                                            <color key="backgroundColor" red="0.96862745100000003" green="0.94509803920000002" blue="0.90588235289999997" alpha="1" colorSpace="calibratedRGB"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="44" id="SaI-sP-bCh"/>
+                                            </constraints>
+                                            <nil key="textColor"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                            <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                    <real key="value" value="1"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                    <color key="value" red="0.84705882349999995" green="0.77647058820000003" blue="0.6705882353" alpha="1" colorSpace="calibratedRGB"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                    <real key="value" value="10"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
+                                            <connections>
+                                                <outlet property="prevField" destination="L7j-Nm-SZN" id="Fni-sG-e4r"/>
+                                            </connections>
+                                        </textField>
+                                    </subviews>
+                                </stackView>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HeQ-YC-86g" userLabel="AlignmentView1">
+                                    <rect key="frame" x="20" y="149" width="269" height="0.0"/>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" id="hFe-Ee-3nM"/>
+                                    </constraints>
+                                </view>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DEn-wZ-6f2" customClass="DesignableButton" customModule="MagicCoin" customModuleProvider="target">
+                                    <rect key="frame" x="20" y="157" width="269" height="66"/>
+                                    <color key="backgroundColor" red="0.25490196079999999" green="0.3803921569" blue="0.57254901960000004" alpha="1" colorSpace="calibratedRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="66" id="wRA-wP-iaj"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                    <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <state key="normal" title="Registration"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                            <real key="value" value="10"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                            <color key="value" red="0.1764705882" green="0.27058823529999998" blue="0.41176470590000003" alpha="1" colorSpace="calibratedRGB"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                            <real key="value" value="2"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                    <connections>
+                                        <action selector="onRegistrationButton:" destination="-1" eventType="touchUpInside" id="UQ9-mB-VDe"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <constraints>
+                                <constraint firstItem="HeQ-YC-86g" firstAttribute="leading" secondItem="wlh-ch-mK3" secondAttribute="leading" constant="20" symbolic="YES" id="NBy-x1-tf0"/>
+                                <constraint firstAttribute="trailing" secondItem="Ycc-KF-RWZ" secondAttribute="trailing" constant="20" symbolic="YES" id="NWw-3Z-axJ"/>
+                                <constraint firstItem="Ycc-KF-RWZ" firstAttribute="leading" secondItem="wlh-ch-mK3" secondAttribute="leading" constant="20" symbolic="YES" id="UK2-I8-Ewj"/>
+                                <constraint firstAttribute="trailing" secondItem="HeQ-YC-86g" secondAttribute="trailing" constant="20" symbolic="YES" id="Zx2-bh-za9"/>
+                                <constraint firstItem="DEn-wZ-6f2" firstAttribute="leading" secondItem="wlh-ch-mK3" secondAttribute="leading" constant="20" symbolic="YES" id="bN4-Vn-Vgv"/>
+                                <constraint firstAttribute="trailing" secondItem="85g-eT-1Oi" secondAttribute="trailing" constant="20" symbolic="YES" id="eUm-TZ-2Xv"/>
+                                <constraint firstItem="85g-eT-1Oi" firstAttribute="leading" secondItem="wlh-ch-mK3" secondAttribute="leading" constant="20" symbolic="YES" id="lis-Qb-aDm"/>
+                                <constraint firstAttribute="trailing" secondItem="DEn-wZ-6f2" secondAttribute="trailing" constant="20" symbolic="YES" id="mdO-iu-tku"/>
+                            </constraints>
+                        </stackView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="wlh-ch-mK3" secondAttribute="bottom" constant="20" symbolic="YES" id="21F-zs-Vb0"/>
+                        <constraint firstAttribute="trailing" secondItem="wlh-ch-mK3" secondAttribute="trailing" id="aiO-uh-RFX"/>
+                        <constraint firstItem="wlh-ch-mK3" firstAttribute="leading" secondItem="L3Z-tx-Q1j" secondAttribute="leading" id="jth-kv-roF"/>
+                        <constraint firstItem="wlh-ch-mK3" firstAttribute="top" secondItem="L3Z-tx-Q1j" secondAttribute="top" constant="8" id="pR5-a8-aAf"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="10"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
+                            <size key="value" width="0.0" height="10"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                            <real key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                            <real key="value" value="10"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                            <color key="value" red="0.74509803919999995" green="0.61568627450000002" blue="0.42745098040000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="© 2017 MagicCoins. All rights reserved" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kN4-Zm-OWy">
+                    <rect key="frame" x="85.5" y="633" width="204.5" height="13.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                    <color key="textColor" red="0.56078431370000004" green="0.50196078430000002" blue="0.41568627450000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="L3Z-tx-Q1j" firstAttribute="leading" secondItem="Giu-zj-Ce2" secondAttribute="leading" constant="33" id="30g-RS-jqw"/>
+                <constraint firstItem="kN4-Zm-OWy" firstAttribute="centerX" secondItem="Giu-zj-Ce2" secondAttribute="centerX" id="3OB-Tu-bQ5"/>
+                <constraint firstItem="P1E-xQ-0zc" firstAttribute="top" secondItem="Giu-zj-Ce2" secondAttribute="top" constant="24" id="E6M-UC-JXb"/>
+                <constraint firstItem="haU-lZ-gsL" firstAttribute="top" secondItem="P1E-xQ-0zc" secondAttribute="bottom" constant="20" id="GCJ-a2-8ai"/>
+                <constraint firstAttribute="trailing" secondItem="bl6-S4-gnE" secondAttribute="trailing" id="KGd-Ja-bRE"/>
+                <constraint firstAttribute="bottom" secondItem="kN4-Zm-OWy" secondAttribute="bottom" constant="20" symbolic="YES" id="Ly8-PR-I0N"/>
+                <constraint firstItem="bl6-S4-gnE" firstAttribute="top" secondItem="Giu-zj-Ce2" secondAttribute="top" id="Nah-yt-Gjl"/>
+                <constraint firstAttribute="trailing" secondItem="pGh-Xx-2aa" secondAttribute="trailing" constant="20" symbolic="YES" id="NdL-A1-Pvm"/>
+                <constraint firstAttribute="trailing" secondItem="L3Z-tx-Q1j" secondAttribute="trailing" constant="33" id="Ziy-Ro-Cih"/>
+                <constraint firstItem="bl6-S4-gnE" firstAttribute="leading" secondItem="Giu-zj-Ce2" secondAttribute="leading" id="dRA-0a-Ocu"/>
+                <constraint firstAttribute="bottom" secondItem="bl6-S4-gnE" secondAttribute="bottom" id="ffd-SV-AeU"/>
+                <constraint firstItem="L3Z-tx-Q1j" firstAttribute="centerX" secondItem="Giu-zj-Ce2" secondAttribute="centerX" id="fuC-fV-77M"/>
+                <constraint firstItem="haU-lZ-gsL" firstAttribute="centerX" secondItem="Giu-zj-Ce2" secondAttribute="centerX" id="g6Q-ia-JDQ"/>
+                <constraint firstItem="pGh-Xx-2aa" firstAttribute="top" secondItem="Giu-zj-Ce2" secondAttribute="top" constant="36" id="gI1-hc-quW"/>
+                <constraint firstItem="L3Z-tx-Q1j" firstAttribute="top" secondItem="haU-lZ-gsL" secondAttribute="bottom" constant="20" id="hKi-nn-qoZ"/>
+                <constraint firstItem="P1E-xQ-0zc" firstAttribute="centerX" secondItem="Giu-zj-Ce2" secondAttribute="centerX" id="v9a-Wn-GVp"/>
+            </constraints>
+            <point key="canvasLocation" x="45.5" y="81.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Background" width="375" height="667"/>
+        <image name="Logo" width="97" height="130"/>
+    </resources>
+</document>
